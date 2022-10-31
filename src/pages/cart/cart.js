@@ -16,12 +16,13 @@ const Cart = () => {
     }
 
     return (
+        <>
         <div className="cartWrapper">
             <div className="container">
                 {cart.length >= 1 ? (
                     <div className="grid my-5">
                         <div className="cartItem p-3">
-                            <h2>Order Summary</h2>
+                            <h2>Order Summary🧾</h2>
                             {cart.map((item) => (
                                 <div className="item" key={item.product.id}>
                                     <div className="grid py-3">
@@ -66,7 +67,7 @@ const Cart = () => {
                             ))}
                         </div>
                         <div className="payment p-3">
-                            <h2>Payment Summary</h2>
+                            <h2>Payment Summary💸</h2>
                             <div className="summary py-3 my-2">
                                 <div className="flex py-1">
                                     <span>Subtotal:</span>
@@ -90,6 +91,7 @@ const Cart = () => {
                 )}
             </div>
         </div>
+        </>
     )
 }
 
